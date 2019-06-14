@@ -8,7 +8,7 @@ import (
 	"github.com/nuagenetworks/vspk-go/vspk"
 )
 
-func nuageCreateIKEPSK(ikePSKCfg map[string]interface{}, parent *vspk.Enterprise) *vspk.IKEPSK {
+func NuageCreateIKEPSK(ikePSKCfg map[string]interface{}, parent *vspk.Enterprise) *vspk.IKEPSK {
 	//create PSK
 	fmt.Println("########################################")
 	fmt.Println("#####     IKE PSK          #############")
@@ -45,7 +45,7 @@ func nuageCreateIKEPSK(ikePSKCfg map[string]interface{}, parent *vspk.Enterprise
 	return ikePSK
 }
 
-func nuageCreateIKEGateway(ikeGatewayCfg map[string]interface{}, parent *vspk.Enterprise) *vspk.IKEGateway {
+func NuageCreateIKEGateway(ikeGatewayCfg map[string]interface{}, parent *vspk.Enterprise) *vspk.IKEGateway {
 	fmt.Println("########################################")
 	fmt.Println("#####     IKE Gateway      #############")
 	fmt.Println("########################################")
@@ -86,7 +86,7 @@ func nuageCreateIKEGateway(ikeGatewayCfg map[string]interface{}, parent *vspk.En
 	return ikeGateway
 }
 
-func nuageCreateIKEEncryptionProfile(ikeEncryptionProfileCfg map[string]interface{}, parent *vspk.Enterprise) *vspk.IKEEncryptionprofile {
+func NuageCreateIKEEncryptionProfile(ikeEncryptionProfileCfg map[string]interface{}, parent *vspk.Enterprise) *vspk.IKEEncryptionprofile {
 	fmt.Println("########################################")
 	fmt.Println("#####IKE Encryption Profile#############")
 	fmt.Println("########################################")
@@ -121,7 +121,7 @@ func nuageCreateIKEEncryptionProfile(ikeEncryptionProfileCfg map[string]interfac
 	return ikeEncryptionProfile
 }
 
-func nuageCreateIKEGatewayProfile(ikeGatewayProfileCfg map[string]interface{}, parent *vspk.Enterprise) *vspk.IKEGatewayProfile {
+func NuageCreateIKEGatewayProfile(ikeGatewayProfileCfg map[string]interface{}, parent *vspk.Enterprise) *vspk.IKEGatewayProfile {
 	fmt.Println("########################################")
 	fmt.Println("#####   IKE Gateway Profile   ##########")
 	fmt.Println("########################################")
@@ -157,7 +157,7 @@ func nuageCreateIKEGatewayProfile(ikeGatewayProfileCfg map[string]interface{}, p
 	return ikeGatewayProfile
 }
 
-func nuageIKEGatewayConnection(ikeGatewayConnCfg map[string]interface{}, parent *vspk.VLAN) *vspk.IKEGatewayConnection {
+func NuageIKEGatewayConnection(ikeGatewayConnCfg map[string]interface{}, parent *vspk.VLAN) *vspk.IKEGatewayConnection {
 	fmt.Println("########################################")
 	fmt.Println("#####  IKE GW Connection      ##########")
 	fmt.Println("########################################")

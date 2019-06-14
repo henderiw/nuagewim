@@ -8,7 +8,7 @@ import (
 	"github.com/nuagenetworks/vspk-go/vspk"
 )
 
-func nuageNSG(nsGatewayCfg map[string]interface{}, parent *vspk.Enterprise) *vspk.NSGateway {
+func NuageNSG(nsGatewayCfg map[string]interface{}, parent *vspk.Enterprise) *vspk.NSGateway {
 	fmt.Println("########################################")
 	fmt.Println("#####        NSG Gateway      ##########")
 	fmt.Println("########################################")
@@ -43,7 +43,7 @@ func nuageNSG(nsGatewayCfg map[string]interface{}, parent *vspk.Enterprise) *vsp
 	return nsGateway
 }
 
-func nuageNSGPort(nsPortCfg map[string]interface{}, parent *vspk.NSGateway) *vspk.NSPort {
+func NuageNSGPort(nsPortCfg map[string]interface{}, parent *vspk.NSGateway) *vspk.NSPort {
 	fmt.Println("########################################")
 	fmt.Println("#####        NSG Port         ##########")
 	fmt.Println("########################################")
@@ -78,7 +78,7 @@ func nuageNSGPort(nsPortCfg map[string]interface{}, parent *vspk.NSGateway) *vsp
 	return nsPort
 }
 
-func nuageVlan(nsVlanCfg map[string]interface{}, parent *vspk.NSPort) *vspk.VLAN {
+func NuageVlan(nsVlanCfg map[string]interface{}, parent *vspk.NSPort) *vspk.VLAN {
 	fmt.Println("########################################")
 	fmt.Println("#####        NSG Vlan         ##########")
 	fmt.Println("########################################")

@@ -8,7 +8,7 @@ import (
 	"github.com/nuagenetworks/vspk-go/vspk"
 )
 
-func nuageEnterprise(enterpriseCfg map[string]interface{}, parent *vspk.Me) *vspk.Enterprise {
+func NuageEnterprise(enterpriseCfg map[string]interface{}, parent *vspk.Me) *vspk.Enterprise {
 	enterprise := &vspk.Enterprise{}
 
 	enterprises, err := parent.Enterprises(&bambou.FetchingInfo{
